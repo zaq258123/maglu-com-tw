@@ -431,15 +431,15 @@
     color: #FFFFFF;
 }
 
-.brand .h1-seo {
-    font-size: 4.5em;
+.h1-seo {
+    font-size: 4em;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.brand .n-logo {
+.n-logo {
     max-width: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .invision-logo {
