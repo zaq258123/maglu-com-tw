@@ -21,7 +21,7 @@
       </div> -->
         <div class="navbar-translate">
             <a class="navbar-brand" placement="bottom">
-                <img style="max-width: 40%" src="assets/img/logo.png">
+                <img src="assets/img/logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02"
                 aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -33,42 +33,30 @@
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/index']" target="_blank">
-                        <!-- <i class="now-ui-icons arrows-1_cloud-download-93"></i> -->
-                        <p>HOME</p>
+                    <a class="nav-link" [routerLink]="['/index']">
+                        <i class="now-ui-icons travel_info"></i>
+                        <p>關於六磁</p>
                     </a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
-                        <i class="now-ui-icons files_paper"></i>
-                        <p>Documentation</p>
-                    </a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link btn btn-neutral" href="https://www.creative-tim.com/product/now-ui-kit-pro-angular" target="_blank">
-                        <i class="now-ui-icons arrows-1_share-66"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank"
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" [routerLink]="['/category']"
                         data-original-title="Follow us on Twitter">
-                        <i class="fa fa-twitter"></i>
-                        <p class="d-lg-none d-xl-none">Twitter</p>
+                        <i class="now-ui-icons loader_gear"></i>
+                        <p>商品種類</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank"
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://shopee.tw/yaotin" target="_blank"
                         data-original-title="Like us on Facebook">
-                        <i class="fa fa-facebook-square"></i>
-                        <p class="d-lg-none d-xl-none">Facebook</p>
+                        <img style="max-width: 27px;" src="assets/img/shopee.png" alt="">
+                        <p class="d-lg-none d-xl-none">蝦皮拍賣</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank"
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="http://seller.pcstore.com.tw/S107840724" target="_blank"
                         data-original-title="Follow us on Instagram">
-                        <i class="fa fa-instagram"></i>
-                        <p class="d-lg-none d-xl-none">Instagram</p>
+                        <img style="max-width: 27px;" src="assets/img/pchome.png" alt="">
+                        <p class="d-lg-none d-xl-none">pchome個人賣場</p>
                     </a>
                 </li>
             </ul>
