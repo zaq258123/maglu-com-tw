@@ -10,6 +10,8 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
     imports: [
@@ -17,6 +19,7 @@ import { ExamplesComponent } from './examples.component';
         FormsModule,
         NgbModule,
         NouisliderModule,
+        RouterModule,
         JWBootstrapSwitchModule,
         AgmCoreModule.forRoot({
             apiKey: 'YOUR_KEY_HERE'
