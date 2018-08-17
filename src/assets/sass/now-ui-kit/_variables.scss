@@ -46,7 +46,7 @@ $default-color:              #888 !default;
 $default-states-color:       lighten($default-color, 6%) !default;
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
 
-$primary-color:              #95a4fa !default;
+$primary-color:              #989cb4 !default;
 $primary-states-color:       lighten($primary-color, 6%) !default;
 $primary-color-opacity:      rgba(249, 99, 50, .3) !default;
 $primary-color-alert:        rgba(249, 99, 50, .8) !default;
@@ -156,7 +156,7 @@ $font-size-navbar:             1em          !default;
 $font-size-mini:               0.7142em     !default;
 $font-size-small:              0.8571em     !default;
 $font-size-base:               14px         !default;
-$font-size-large:              1em          !default;
+$font-size-large:              1.2em          !default;
 $font-size-large-navbar:       20px         !default;
 $font-size-blockquote:         1.1em        !default; // ~ 15px
 

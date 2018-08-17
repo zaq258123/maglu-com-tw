@@ -1,27 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
-        <!-- <div class="dropdown button-dropdown">
-        <div ngbDropdown>
-          <a class="dropdown-toggle" ngbDropdownToggle>
-              <span class="button-bar"></span>
-              <span class="button-bar"></span>
-              <span class="button-bar"></span>
-          </a>
-           <div ngbDropdownMenu>
-             <a class="dropdown-header">Dropdown header</a>
-             <a class="dropdown-item" href="#">Action</a>
-             <a class="dropdown-item" href="#">Another action</a>
-             <a class="dropdown-item" href="#">Something else here</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">Separated link</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">One more separated link</a>
-           </div>
-         </div>
-      </div> -->
         <div class="navbar-translate">
             <a class="navbar-brand" placement="bottom">
-                <img src="assets/img/logo.png">
+                <img class="img-logo" src="assets/img/logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02"
                 aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -34,29 +15,33 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/index']">
-                        <i class="now-ui-icons travel_info"></i>
-                        <p>關於六磁</p>
+                        <p>首頁</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" [routerLink]="['/category']"
-                        data-original-title="Follow us on Twitter">
-                        <i class="now-ui-icons loader_gear"></i>
-                        <p>商品種類</p>
+                    <a class="nav-link" [routerLink]="['/category']" data-original-title="product category">
+                        <p>永久磁鐵</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://shopee.tw/yaotin" target="_blank"
-                        data-original-title="Like us on Facebook">
-                        <img style="max-width: 27px;" src="assets/img/shopee.png" alt="">
-                        <p class="d-lg-none d-xl-none">蝦皮拍賣</p>
+                    <a class="nav-link" [routerLink]="['/category']" data-original-title="product category">
+                        <p>磁鐵周邊產品</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="http://seller.pcstore.com.tw/S107840724" target="_blank"
-                        data-original-title="Follow us on Instagram">
-                        <img style="max-width: 27px;" src="assets/img/pchome.png" alt="">
-                        <p class="d-lg-none d-xl-none">pchome個人賣場</p>
+                    <a class="nav-link" [routerLink]="['/category']" data-original-title="product category">
+                        <p>精密馬達</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/category']" data-original-title="product category">
+                        <p>磁性工具</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/category']" data-original-title="product category">
+                        <i class="now-ui-icons shopping_cart-simple"></i>
+                        <p>如何購買</p>
                     </a>
                 </li>
             </ul>

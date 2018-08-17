@@ -50,7 +50,7 @@
 
         > .content-center{
             position: absolute;
-            top: 50%;
+            top: 55%;
             left: 50%;
 
             -ms-transform: translate(-50%,-50%);
@@ -71,7 +71,7 @@
 
     &.page-header-small{
         min-height: 60vh;
-        max-height: 440px;
+        max-height: 500px;
     }
 
     &:after,

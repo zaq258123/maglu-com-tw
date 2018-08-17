@@ -2,6 +2,7 @@
     padding-top: $navbar-padding-base;
     padding-bottom: $navbar-padding-base;
     min-height: 53px;
+    max-height: 80px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 
@@ -131,7 +132,7 @@
     }
 
     &.navbar-transparent{
-        background-color: $transparent-bg !important;
+        background-color: rgba(222,222,222, .1) !important;
         box-shadow: none;
         color: $white-color;
         padding-top: 20px;
