@@ -475,7 +475,10 @@
 }
 
 .section-basic {
-    padding-top: 0;
+    background-color: #4d4e52;
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section-images {
