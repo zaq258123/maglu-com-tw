@@ -3,18 +3,17 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ComponentsComponent } from './components/components.component';
-import { LandingComponent } from './examples/landing/landing.component';
-import { LoginComponent } from './examples/login/login.component';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { MagnetsComponent } from './components/products/magnets/magnets.component';
+import { MagneticComponent } from './components/products/magnetic/magnetic.component';
+import { ToolsComponent } from './components/products/tools/tools.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: LandingComponent },
-    { path: 'nucleoicons',          component: NucleoiconsComponent },
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'category',             component: ProfileComponent }
+    { path: 'home',     component: LandingComponent },
+    { path: 'magnets',  component: MagnetsComponent },
+    { path: 'magnetic', component: MagneticComponent },
+    { path: 'tools',    component: ToolsComponent },
 ];
 
 @NgModule({

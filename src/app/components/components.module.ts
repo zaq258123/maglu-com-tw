@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
+import { AgmCoreModule } from '@agm/core';
+
+import { LandingComponent } from './landing/landing.component';
+import { LoginComponent } from './login/login.component';
+import { MagnetsComponent } from './products/magnets/magnets.component';
+import { MagneticComponent } from './products/magnetic/magnetic.component';
+import { ToolsComponent } from './products/tools/tools.component';
+import { ComponentsComponent } from './components.component';
 import { RouterModule } from '@angular/router';
 
-import { BasicelementsComponent } from './basicelements/basicelements.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { TypographyComponent } from './typography/typography.component';
-import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
-import { ComponentsComponent } from './components.component';
-import { NotificationComponent } from './notification/notification.component';
-import { NgbdModalBasic } from './modal/modal.component';
 
 @NgModule({
     imports: [
@@ -21,17 +22,18 @@ import { NgbdModalBasic } from './modal/modal.component';
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JWBootstrapSwitchModule
-      ],
-    declarations: [
-        ComponentsComponent,
-        BasicelementsComponent,
-        NavigationComponent,
-        TypographyComponent,
-        NucleoiconsComponent,
-        NotificationComponent,
-        NgbdModalBasic
+        JWBootstrapSwitchModule,
+        AgmCoreModule.forRoot({
+            apiKey: 'YOUR_KEY_HERE'
+        })
     ],
-    exports:[ ComponentsComponent ]
+    declarations: [
+        LandingComponent,
+        LoginComponent,
+        ComponentsComponent,
+        MagnetsComponent,
+        MagneticComponent,
+        ToolsComponent
+    ]
 })
 export class ComponentsModule { }
