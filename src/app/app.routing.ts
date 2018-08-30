@@ -9,7 +9,7 @@ import { MagneticComponent } from './components/products/magnetic/magnetic.compo
 import { ToolsComponent } from './components/products/tools/tools.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',     component: LandingComponent },
     { path: 'magnets',  component: MagnetsComponent },
     { path: 'magnetic', component: MagneticComponent },
