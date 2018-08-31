@@ -73,13 +73,14 @@
     border-radius : 4px;
 }
 .card .cover {
-    max-height : 200px;
+    max-height : 220px;
     overflow : hidden;
     border-radius : 4px 4px 0 0;
 }
 .card .cover img {
     width : 100%;
 }
+
 .card .user {
     border-radius : 50%;
     display : block;
@@ -122,58 +123,46 @@
     text-align : center;
     margin-bottom : 20px;
 }
+
 .card .footer {
-    border-top : 1px solid #eeeeee;
-    color : #999999;
-    margin : 30px 0 0;
-    padding : 10px 0 0;
-    text-align : center;
-}
-.card .footer .social-links {
-    font-size : 18px;
-}
-.card .footer .social-links a {
-    margin : 0 7px;
-}
-.card .footer .btn-simple {
-    margin-top : -6px;
-}
-.card .header {
-    padding : 15px 20px;
+    padding : 10px 20px;
     height : 90px;
 }
 .card .motto {
-    border-bottom : 1px solid #eeeeee;
+    border-top : 2px solid #eeeeee;
     color : #999999;
     font-size : 14px;
     font-weight : 400;
     padding-bottom : 10px;
     text-align : center;
+    margin-bottom : 10px;
 }
 
-.stats-container {
+.box-container {
     width : 100%;
     margin-top : 50px;
 }
 
-.stats-container p {
+.box-container p {
     margin-top : 10px;
 }
-.stats-odd, .stats-even {
+.box-odd, .box-even {
     display : block;
     float : left;
     width : 50%;
     text-align : center;
+    margin-bottom : 10%;
 }
 
-.stats-odd {
+.box-odd {
     border-right : 1px solid #eeeeee;
 }
 
-.stats-odd h4, .stats-even h4 {
+.box-odd h4, .box-even h4 {
+    font-size : 1.5em;
     font-weight : 200;
     margin-bottom : 5px;
 }
-.stats-odd p, .status-even  p {
+.box-odd p, .box-even  p {
     color : #777777;
 }
