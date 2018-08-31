@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     @ViewChild(NavbarComponent) navbar: NavbarComponent;
 
     // tslint:disable-next-line:max-line-length
-    constructor( private renderer: Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
+    constructor( private renderer: Renderer, private router: Router, @Inject(DOCUMENT) private document: any, private element: ElementRef, public location: Location) {}
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement.children[0].children[0];
         this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
@@ -27,11 +27,10 @@ export class AppComponent implements OnInit {
             }
             this.navbar.sidebarClose();
 
-            this.renderer.listenGlobal('window', 'scroll', (event) => {
+            this.renderer.listenGlobal('window', 'scroll', () => {
                 const number = window.scrollY;
                 let _location = this.location.path();
                 _location = _location.split('/')[2];
-
                 if (number > 150 || window.pageYOffset > 150) {
                     navbar.classList.remove('navbar-transparent');
                 } else if (_location !== 'login' && this.location.path() !== '/nucleoicons') {

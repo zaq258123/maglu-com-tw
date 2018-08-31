@@ -21,7 +21,8 @@
             "styles": [
               "styles.scss",
               "assets/sass/now-ui-kit.scss",
-              "assets/css/demo.css"
+              "assets/css/demo.css",
+              "assets/css/rotating.css"
             ],
             "scripts": [
               "../node_modules/rellax/rellax.min.js"
