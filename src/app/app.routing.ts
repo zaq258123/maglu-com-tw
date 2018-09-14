@@ -7,6 +7,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { MagnetsComponent } from './components/products/magnets/magnets.component';
 import { MagneticComponent } from './components/products/magnetic/magnetic.component';
 import { ToolsComponent } from './components/products/tools/tools.component';
+import { MotorComponent } from './components/products/motor/motor.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'magnets',  component: MagnetsComponent },
     { path: 'magnetic', component: MagneticComponent },
     { path: 'tools',    component: ToolsComponent },
+    { path: 'motor',    component: MotorComponent },
 ];
 
 @NgModule({

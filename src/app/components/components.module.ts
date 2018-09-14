@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { MagnetsComponent } from './products/magnets/magnets.component';
 import { MagneticComponent } from './products/magnetic/magnetic.component';
 import { ToolsComponent } from './products/tools/tools.component';
+import { MotorComponent } from './products/motor/motor.component';
 import { ComponentsComponent } from './components.component';
 import { RouterModule } from '@angular/router';
 
@@ -33,7 +34,8 @@ import { RouterModule } from '@angular/router';
         ComponentsComponent,
         MagnetsComponent,
         MagneticComponent,
-        ToolsComponent
+        ToolsComponent,
+        MotorComponent
     ]
 })
 export class ComponentsModule { }

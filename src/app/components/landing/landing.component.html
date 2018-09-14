@@ -10,51 +10,10 @@
             </div>
         </div>
     </div>
-
-    <div class="section section-about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center">
-                    <h2 class="title">關於六磁</h2>
-                    <h5 class="description text-left">
-                        <p>
-                            &emsp;&emsp;六磁實業有限公司專研製造磁性材料二十餘年，以電子零件、馬達電機、3C產品及無塵室磁軌輸送帶等工業電子領域為主。
-                        </p>
-                        <p>
-                            &emsp;&emsp;近十年來更應客戶的要求，開發製造各種精密馬達以滿足市場的需求。本公司所有產品，均符合歐洲RoHs標準。並用專業的技術，以客為尊的服務態度，贏得國內外大廠及業界很高的評價。並歡迎各位的來訪。
-                        </p>
-                    </h5>
-                </div>
-            </div>
-            <div class="separator separator-primary"></div>
-            <div class="section-story-overview">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="image-container image-left" style="background-image: url('assets/img/story1.jpg')">
-                            <br>
-                            <p class="blockquote blockquote-primary" style="font-size: 18px">六磁實業由一群在磁性材料領域有多年經驗的產經學專業人士共同創立。創立宗旨是利用磁性材料來研發做出各種領域所需的磁鐵。
-                                <br>
-                            </p>
-                        </div>
-                        <div class="image-container" style="background-image: url('assets/img/story2.jpg')">
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="image-container image-right" style="background-image: url('assets/img/story3.jpg')"></div>
-                        <h2 style="margin-top: 30px">磁石的應用</h2>
-                        <p style="font-size: 20px">從早期的業界如電子、電機、五金、吸著、文教等，發展到目前應用於科技業界的磁浮、磁能、磁控、磁化、磁氣治療等，可以說隨著磁石性能的提昇，應用範圍也越來越廣泛</p>
-                        <p style="font-size: 20px">磁性應用的產品小從日常生活產品中的手機、電腦光碟硬碟機之無刷馬達、音響喇叭、各式風扇、汽車零件、馬達、各式儀表，大到磁浮列車、航空航太用之零件，另外也在醫療設備及隨身保健用品上看見，所以磁性產品應用之廣隨處可見。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="section section-product text-center">
         <div class="container">
             <h2 class="title">產品介紹</h2>
-            <p>Products</p>
             <hr style="width:10%">
-
             <div class="product">
                 <div class="row">
                     <div class="col-md-3">
@@ -96,13 +55,53 @@
                     </div>
                     <div class="col-md-3">
                         <div class="product-category">
-                            <img src="assets/img/pro4.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <a [routerLink]="['/motor']">
+                                <img src="assets/img/pro4.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            </a>
                             <h4 class="title">精密馬達</h4>
                             <p class="category text-primary">Precise Motors</p>
                             <!-- <p class="description">You can write here details about one of your team members. You can give more details about what
                                 they do. Feel free to add some
                                 <a href="#">links</a> for people to be able to follow them outside the site.</p> -->
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">關於六磁</h2>
+                    <h5 class="description text-left">
+                        <p>
+                            &emsp;&emsp;六磁實業有限公司專研製造磁性材料二十餘年，以電子零件、馬達電機、3C產品及無塵室磁軌輸送帶等工業電子領域為主。
+                        </p>
+                        <p>
+                            &emsp;&emsp;近十年來更應客戶的要求，開發製造各種精密馬達以滿足市場的需求。本公司所有產品，均符合歐洲RoHs標準。並用專業的技術，以客為尊的服務態度，贏得國內外大廠及業界很高的評價。並歡迎各位的來訪。
+                        </p>
+                    </h5>
+                </div>
+            </div>
+            <div class="separator separator-primary"></div>
+            <div class="section-story-overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-container image-left" style="background-image: url('assets/img/story1.jpg')">
+                            <br>
+                            <p class="blockquote blockquote-primary" style="font-size: 18px">六磁實業由一群在磁性材料領域有多年經驗的產經學專業人士共同創立。創立宗旨是利用磁性材料來研發做出各種領域所需的磁鐵。
+                                <br>
+                            </p>
+                        </div>
+                        <div class="image-container" style="background-image: url('assets/img/story2.jpg')">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="image-container image-right" style="background-image: url('assets/img/story3.jpg')"></div>
+                        <h2 style="margin-top: 30px">磁石的應用</h2>
+                        <p style="font-size: 20px">從早期的業界如電子、電機、五金、吸著、文教等，發展到目前應用於科技業界的磁浮、磁能、磁控、磁化、磁氣治療等，可以說隨著磁石性能的提昇，應用範圍也越來越廣泛</p>
+                        <p style="font-size: 20px">磁性應用的產品小從日常生活產品中的手機、電腦光碟硬碟機之無刷馬達、音響喇叭、各式風扇、汽車零件、馬達、各式儀表，大到磁浮列車、航空航太用之零件，另外也在醫療設備及隨身保健用品上看見，所以磁性產品應用之廣隨處可見。</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +128,7 @@
                     <a [routerLink]="['/tools']" style="color: white">
                         <h6>磁性工具</h6>
                     </a>
-                    <a [routerLink]="['/home']" style="color: white">
+                    <a [routerLink]="['/motor']" style="color: white">
                         <h6>機密馬達</h6>
                     </a>
                 </div>

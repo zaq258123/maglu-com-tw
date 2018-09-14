@@ -135,7 +135,13 @@
 
     .collections {
         img {
-            margin-bottom : 30px;
+            margin-bottom : 20px;
+            max-height : 220px;
+        }
+        .frame {
+            img {
+                width : 100%;
+            }
         }
     }
 
