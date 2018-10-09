@@ -4,8 +4,8 @@
             <a class="navbar-brand" placement="bottom">
                 <img class="img-logo" src="assets/img/logo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02"
-                aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar bar1"></span>
                 <span class="navbar-toggler-bar bar2"></span>
                 <span class="navbar-toggler-bar bar3"></span>
@@ -16,6 +16,11 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/home']">
                         <p>首頁</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/history']">
+                        <p>歷史沿革</p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -36,6 +41,11 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/motor']" data-original-title="product category">
                         <p>精密馬達</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/contact']">
+                        <p>聯絡我們</p>
                     </a>
                 </li>
             </ul>

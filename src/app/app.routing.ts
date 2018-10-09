@@ -8,14 +8,18 @@ import { MagnetsComponent } from './components/products/magnets/magnets.componen
 import { MagneticComponent } from './components/products/magnetic/magnetic.component';
 import { ToolsComponent } from './components/products/tools/tools.component';
 import { MotorComponent } from './components/products/motor/motor.component';
+import { HistoryComponent } from './components/history/history.component';
+import { MapComponent } from './components/map/map.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',     component: LandingComponent },
-    { path: 'magnets',  component: MagnetsComponent },
+    { path: 'history',  component: HistoryComponent },
     { path: 'magnetic', component: MagneticComponent },
+    { path: 'magnets',  component: MagnetsComponent },
     { path: 'tools',    component: ToolsComponent },
     { path: 'motor',    component: MotorComponent },
+    { path: 'contact',  component: MapComponent },
 ];
 
 @NgModule({
