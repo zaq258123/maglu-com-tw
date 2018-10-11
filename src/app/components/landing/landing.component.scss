@@ -41,7 +41,7 @@
 //     transform : rotateX(360deg);
 // }
 .serviceBox .title {
-    font-size : 18px;
+    font-size : 20px;
     font-weight : 600;
     text-transform : uppercase;
     margin : 0 0 10px;
@@ -84,13 +84,13 @@
     background-color : #007a6d;
 }
 .serviceBox.blue {
-    background-color : #36bfc5;
+    background-color : #5d6a72;
 }
 .serviceBox.blue .service-icon {
-    color : #36bfc5;
+    color : #5d6a72;
 }
 .serviceBox.blue .read-more {
-    background-color : #015f65;
+    background-color : #2c4250;
 }
 .serviceBox.red {
     background-color : #f23d3a;
@@ -101,6 +101,37 @@
 .serviceBox.red .read-more {
     background-color : #ad0e0c;
 }
+
+.footer {
+    min-height : 100px;
+    ul {
+        margin-bottom : 0;
+        padding : 0;
+        list-style : none;
+
+        li {
+            left : -100px;
+            font-size : .8rem;
+            display : inline-block;
+        }
+    }
+
+    .title {
+        margin-bottom : 0px;
+        margin-top : 15px;
+        font-size : 1.3rem;
+        text-align : right;
+    }
+    .sub-title {
+        font-size : .75rem;
+        text-align : right;
+    }
+    .copyright {
+        display : flex;
+        align-items : center;
+    }
+}
+
 @media only screen and (max-width:990px) {
     .serviceBox {
         margin-bottom : 60px;
@@ -109,8 +140,18 @@
         padding : 20px 15px 30px;
     }
 }
+
 @media only screen and (max-width:767px) {
     .serviceBox {
         margin-bottom : 130px;
+    }
+    .footer {
+        min-height : 60px;
+    }
+    .footer .copyright {
+        justify-content : center;
+    }
+    .title, .sub-title, .info {
+        display : none;
     }
 }
