@@ -127,6 +127,7 @@
 .card .footer {
     padding : 10px 20px;
     height : 90px;
+    background-color : white;
 }
 .card .motto {
     border-top : 2px solid #eeeeee;
