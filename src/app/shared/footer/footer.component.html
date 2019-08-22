@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngIf="router.url === '/home'">
+        <div class="footer-title">六磁實業有限公司</div>
+        <div class="footer-sub-title">LUCY INDUSTRIAL CO.,LTD</div>
+      </div>
+      <div class="footer-info col-md-3" *ngIf="router.url === '/home'">
+        <ul>
+          <li><span>電話:&nbsp;</span>+886-2-2729-2936</li><br>
+          <li><span>Email:&nbsp;</span><a href="mailto:lic@maglu.com.tw">lic@maglu.com.tw</a></li>
+          <li><span>地址:&nbsp;</span>241 新北市三重區重新路1段160號21樓</li><br>
+        </ul>
+      </div>
+      <div class="copyright" [ngClass]="router.url === '/home' ? 'col-md-6' : 'col-md-12'">
+        Copyright &copy; {{data | date: 'yyyy'}}
+        <a style="color: white" href="https://maglu.com.tw/home" target="_blank">六磁實業有限公司</a>
+      </div>
+    </div>
+  </div>
+</footer>

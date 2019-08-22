@@ -102,36 +102,6 @@
     background-color : #ad0e0c;
 }
 
-.footer {
-    min-height : 100px;
-    ul {
-        margin-bottom : 0;
-        padding : 0;
-        list-style : none;
-
-        li {
-            left : -100px;
-            font-size : .8rem;
-            display : inline-block;
-        }
-    }
-
-    .footer-title {
-        margin-bottom : 0px;
-        margin-top : 15px;
-        font-size : 1.3rem;
-        text-align : right;
-    }
-    .footer-sub-title {
-        font-size : .6rem;
-        text-align : right;
-    }
-    .copyright {
-        display : flex;
-        align-items : center;
-    }
-}
-
 @media only screen and (max-width:990px) {
     .serviceBox {
         margin-bottom : 60px;
@@ -144,14 +114,5 @@
 @media only screen and (max-width:767px) {
     .serviceBox {
         margin-bottom : 130px;
-    }
-    .footer {
-        min-height : 60px;
-    }
-    .footer .copyright {
-        justify-content : center;
-    }
-    .footer-title, .footer-sub-title, .footer-info {
-        display : none;
     }
 }
