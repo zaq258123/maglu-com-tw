@@ -11,7 +11,6 @@ import { MagnetsComponent } from './products/magnets/magnets.component';
 import { MagneticComponent } from './products/magnetic/magnetic.component';
 import { ToolsComponent } from './products/tools/tools.component';
 import { MotorComponent } from './products/motor/motor.component';
-import { ComponentsComponent } from './components.component';
 import { RouterModule } from '@angular/router';
 import { MapComponent } from './map/map.component';
 import { HistoryComponent } from './history/history.component';
@@ -30,7 +29,6 @@ import { HistoryComponent } from './history/history.component';
     ],
     declarations: [
         LandingComponent,
-        ComponentsComponent,
         MagnetsComponent,
         MagneticComponent,
         ToolsComponent,
