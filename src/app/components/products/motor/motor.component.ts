@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as Rellax from 'rellax';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-motor',
@@ -17,9 +18,10 @@ export class MotorComponent implements OnInit, OnDestroy {
   focus;
   focus1;
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle('六磁實業有限公司 - 精密馬達');
     const rellaxHeader = new Rellax('.rellax-header');
     const body = document.getElementsByTagName('body')[0];
     body.classList.add('profile-page');
